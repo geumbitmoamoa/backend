@@ -22,6 +22,10 @@ class FestivalController(
     fun findAll()
         = festivalService.findAll()
 
+    @GetMapping("/money/{id}")
+    fun getMoney(@PathVariable id: Long)
+        = festivalService.getMoney(id)
+
     @PostMapping("/funding")
     fun funding(@RequestBody request: FundingRequest) = festivalService.funding(request)
 }

@@ -11,7 +11,7 @@ data class MeetRequest(
     val endDate: LocalDate,
     val content: String,
     val purpose: String,
-    val budget: String,
+    val budget: Long,
     val profitPlan: String,
     val connect: String
 ) {

@@ -8,7 +8,7 @@ data class FestivalRequest(
     val date: LocalDate,
     val content: String,
     val purpose: String,
-    val budget: String,
+    val budget: Long,
     val job: Long,
     val plan: String,
     val profitPlan: String,

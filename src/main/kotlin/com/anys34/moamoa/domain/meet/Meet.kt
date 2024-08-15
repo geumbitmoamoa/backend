@@ -14,7 +14,7 @@ class Meet(
     endDate: LocalDate,
     content: String,
     purpose: String,
-    budget: String,
+    budget: Long,
     profitPlan: String,
     connect: String
 ) {
@@ -40,7 +40,7 @@ class Meet(
     var purpose: String = purpose
         protected set
 
-    var budget: String = budget
+    var budget: Long = budget
         protected set
 
     var profitPlan: String = profitPlan

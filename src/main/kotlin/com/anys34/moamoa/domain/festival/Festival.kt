@@ -12,7 +12,7 @@ class Festival(
     date: LocalDate,
     content: String,
     purpose: String,
-    budget: String,
+    budget: Long,
     job: Long,
     plan: String,
     profitPlan: String,
@@ -37,7 +37,7 @@ class Festival(
     var purpose: String = purpose
         protected set
 
-    var budget: String = budget
+    var budget: Long = budget
         protected set
 
     var job: Long = job
@@ -62,7 +62,14 @@ class Festival(
         protected set
 
     fun updateMoney(money: Long): Long {
-        sum += money
+        val temp = sum + money
+        if (budget == sum) {
+            return budget
+        } else if (temp >= budget) {
+            sum = budget
+            return sum
+        }
+        sum = temp
         return sum
     }
 }
