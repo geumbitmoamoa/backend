@@ -30,9 +30,17 @@ class FestivalService(
         return festival.updateMoney(request.money)
     }
 
+    @Transactional
     fun getMoney(id: Long): Long {
         val festival = festivalRepository.findByIdOrNull(id)
             ?: throw IllegalArgumentException()
         return festival.sum
+    }
+
+    @Transactional
+    fun job(id: Long) {
+        val festival = festivalRepository.findByIdOrNull(id)
+            ?: throw IllegalArgumentException()
+        festival.getJob()
     }
 }

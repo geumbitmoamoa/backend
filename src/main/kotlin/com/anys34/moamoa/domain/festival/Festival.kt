@@ -72,4 +72,8 @@ class Festival(
         sum = temp
         return sum
     }
+
+    fun getJob() {
+        job--
+    }
 }

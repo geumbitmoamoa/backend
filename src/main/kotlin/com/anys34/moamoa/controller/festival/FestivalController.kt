@@ -28,4 +28,8 @@ class FestivalController(
 
     @PostMapping("/funding")
     fun funding(@RequestBody request: FundingRequest) = festivalService.funding(request)
+
+    @GetMapping("/job/{id}")
+    fun job(@PathVariable id: Long)
+        = festivalService.job(id)
 }

@@ -1,12 +1,8 @@
 package com.anys34.moamoa.service.meet
 
-import com.anys34.moamoa.domain.festival.Festival
 import com.anys34.moamoa.domain.meet.Meet
 import com.anys34.moamoa.domain.meet.MeetRepository
-import com.anys34.moamoa.dto.festival.request.FestivalRequest
-import com.anys34.moamoa.dto.festival.request.FundingRequest
 import com.anys34.moamoa.dto.meet.request.MeetRequest
-import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
