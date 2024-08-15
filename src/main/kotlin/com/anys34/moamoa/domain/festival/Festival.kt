@@ -61,6 +61,8 @@ class Festival(
     var sum: Long = sum
         protected set
 
+    val type: String = "festival"
+
     fun updateMoney(money: Long): Long {
         val temp = sum + money
         if (budget == sum) {

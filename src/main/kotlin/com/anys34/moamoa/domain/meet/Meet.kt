@@ -48,4 +48,6 @@ class Meet(
 
     var connect: String = connect
         protected set
+
+    val type: String = "meetings"
 }

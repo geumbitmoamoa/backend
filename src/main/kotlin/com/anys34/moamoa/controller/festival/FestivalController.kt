@@ -5,7 +5,7 @@ import com.anys34.moamoa.dto.festival.request.FundingRequest
 import com.anys34.moamoa.service.festival.FestivalService
 import org.springframework.web.bind.annotation.*
 
-@RequestMapping("/festivals")
+@RequestMapping("/festival")
 @RestController
 class FestivalController(
     private val festivalService: FestivalService
