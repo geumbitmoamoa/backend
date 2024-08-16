@@ -76,6 +76,6 @@ class Festival(
     }
 
     fun getJob() {
-        job--
+        job -= 1
     }
 }
